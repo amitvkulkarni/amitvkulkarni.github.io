@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Amit Kulkarni</h1>
-<h3 align="center">A passionate AI apps developer and Business Advisory Consultant</h3>
+<h3 align="center">I’m a management consultant and blogger who loves using data science and machine learning to solve real-world problems. With a background in consulting, I help businesses understand and use data to make smart decisions and improve their strategies. On my blog, I share easy-to-understand insights on industry trends and new tech. My goal is to simplify complex ideas and offer useful tips for staying ahead.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=amitvkulkarni&label=Profile%20views&color=0e75b6&style=flat" alt="amitvkulkarni" /> </p>
 
