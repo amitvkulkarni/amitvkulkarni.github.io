@@ -1,870 +1,1027 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="scroll-smooth" lang="en">
 <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Amit Kulkarni | Technology Associate Director</title>
+  <meta name="description" content="Amit Kulkarni – Technology Associate Director at Arcadis Consulting. 19+ years in product leadership, AI platforms, and advanced analytics."/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#191c1e",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#eff1f3",
+            "surface-container": "#eceef0",
+            "secondary": "#505f76",
+            "on-tertiary-fixed-variant": "#004c6e",
+            "on-secondary-fixed-variant": "#38485d",
+            "on-primary-fixed-variant": "#3f465c",
+            "surface-container-low": "#f2f4f6",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#000000",
+            "surface-container-high": "#e6e8ea",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#bec6e0",
+            "surface-tint": "#565e74",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#89ceff",
+            "secondary-fixed-dim": "#b7c8e1",
+            "on-secondary-fixed": "#0b1c30",
+            "outline": "#76777d",
+            "on-error": "#ffffff",
+            "secondary-container": "#d0e1fb",
+            "secondary-fixed": "#d3e4fe",
+            "background": "#f7f9fb",
+            "primary-container": "#131b2e",
+            "inverse-surface": "#2d3133",
+            "on-primary-fixed": "#131b2e",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#7c839b",
+            "on-tertiary-container": "#008cc7",
+            "inverse-primary": "#bec6e0",
+            "surface-container-highest": "#e0e3e5",
+            "on-surface-variant": "#45464d",
+            "surface-variant": "#e0e3e5",
+            "on-secondary-container": "#54647a",
+            "tertiary-fixed": "#c9e6ff",
+            "error": "#ba1a1a",
+            "primary-fixed": "#dae2fd",
+            "primary": "#000000",
+            "surface-bright": "#f7f9fb",
+            "surface": "#f7f9fb",
+            "tertiary-container": "#001e2f",
+            "surface-dim": "#d8dadc",
+            "outline-variant": "#c6c6cd",
+            "on-tertiary-fixed": "#001e2f",
+            "on-surface": "#191c1e"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "stack-md": "16px",
+            "gutter": "24px",
+            "section-gap": "120px",
+            "base": "4px",
+            "container-max": "1200px",
+            "stack-lg": "32px",
+            "stack-sm": "8px"
+          },
+          fontFamily: {
+            "label-caps": ["Inter"],
+            "h1": ["Inter"],
+            "badge": ["Inter"],
+            "body-lg": ["Work Sans"],
+            "body-md": ["Work Sans"],
+            "h3": ["Inter"],
+            "h2": ["Inter"]
+          },
+          fontSize: {
+            "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600" }],
+            "h1": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "badge": ["13px", { lineHeight: "1.0", fontWeight: "500" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            "h3": ["24px", { lineHeight: "1.3", letterSpacing: "0", fontWeight: "600" }],
+            "h2": ["32px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .asymmetric-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    /* Hero visual */
+    .hero-visual {
+      background: linear-gradient(135deg, #131b2e 0%, #1a3550 30%, #004c6e 65%, #008cc7 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-visual::before {
+      content: '';
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(0, 140, 199, 0.12);
+      top: -80px;
+      right: -60px;
+    }
+    .hero-visual::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      bottom: 40px;
+      left: 20px;
+    }
 
-  <title>My Portfolio</title>
+    /* Project card gradient visuals */
+    .card-visual-1 { background: linear-gradient(135deg, #001e2f 0%, #004c6e 55%, #008cc7 100%); }
+    .card-visual-2 { background: linear-gradient(135deg, #0a1628 0%, #1a3a5f 55%, #1d6fa4 100%); }
+    .card-visual-3 { background: linear-gradient(135deg, #131b2e 0%, #2d4a7a 55%, #5a8ec0 100%); }
+    .card-visual-4 { background: linear-gradient(135deg, #0d1b2e 0%, #1e3a5f 55%, #2f7ab5 100%); }
+    .card-visual-inner {
+      position: relative;
+      overflow: hidden;
+    }
+    .card-visual-inner::after {
+      content: '';
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      bottom: -30px;
+      right: -20px;
+    }
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+    /* Mobile menu */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+  </style>
 </head>
 
-<body id="page-top">
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-primary-container">
 
-  <style>
-    #main-footer {
-      color: #FFFFFF;
-      font-family: "Segoe UI";
-      background: #2B2B2B;
-      text-align: center;
-      margin-top: 75px;
-      padding: 16px;
-      bottom: 8px;
-    }
-  </style>
+  <!-- ════════════════════════════════════
+       TOP NAV BAR
+  ════════════════════════════════════ -->
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 h-20">
+      <div class="text-2xl font-black text-slate-900 tracking-tight">Amit Kulkarni</div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Amit Kulkarni</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#expertise">Expertise</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#projects">Projects</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#experience">Experience</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#awards">Awards</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#credentials">Credentials</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#insights">Insights</a>
+        <a class="font-sans tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-600 transition-all duration-200" href="#contact">Contact</a>
+      </nav>
 
-        <!--         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#courses">Relevant Courses</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Prototypes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Recognitions</a>
-        </li>
-      </ul>
+      <div class="flex items-center gap-4">
+        <!-- <a href="mailto:amitvkulkarni2@gmail.com" class="bg-primary text-on-primary px-6 py-2.5 font-label-caps text-label-caps transition-transform scale-100 active:scale-95 hidden md:inline-block">Get in Touch</a> -->
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Open menu">
+          <span class="block w-6 h-0.5 bg-slate-800"></span>
+          <span class="block w-6 h-0.5 bg-slate-800"></span>
+          <span class="block w-6 h-0.5 bg-slate-800"></span>
+        </button>
+      </div>
     </div>
-  </nav>
 
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="card-text text-center">Amit
-          <span class="text-primary">Kulkarni</span>
-        </h1>
-        <h4 class="card-text text-center">MANAGEMENT CONSULTANT | KAGGLE EXPERT
-        </h4>
-        <div class="card-text text-center"><b>18 YRS EXPERIENCE . BENGALURU .</b>
-          <a href="mailto:"><b>amitvkulkarni2@gmail.com</b></a>
-        </div>
-        <p class="card-text text-center"><b>Data Science | Business Advisory | Consulting | Blogging</b></p>
-        <br>
-        <p class="lead mb-5">A certified data science practitioner with 17 years of experience. Currently, leading the
-          digital and business advisory teams at Arcadis Consulting. In the past, I have served as a Consultant for
-          CTO's office at Cognizant Technology Solutions and have worked as a Sr Consultant delivering data science
-          solutions for CPG clients at Mindtree. I have authored series of articles on the latest trends in data science
-          on analytics platforms like Analytics Vidhya and Medium.<br>
-          <br>My recent blogs on MLOps and Data Version Control (DVC) are featured in the August edition of Heartbeat
-          2021. I am passionate about contributing to the open-source community with analytics applications/solutions
-          built with various open-source frameworks namely R Shiny, Plotly dash, DVC, and MLOps.<br>
-          <br>I write for several publications like <b>AI Advances, Illumination, Data Driven Investor, Python in Plain English, Illumination Mirror, Classy Endeavors, GoPen AI, Lampshade of Illumination and Analytics Vidhya.</b>
-        <div class="social-icons">
-          <div class="card-text text-center">
-            <a href="http://www.linkedin.com/in/amitvkulkarni2" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/AMITVKULKARNI" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.analyticsvidhya.com/blog/author/amitvkulkarni/" target="_blank">
-              <i class="fas fa-blog"></i>
-            </a>
-            <a href="https://medium.com/@amitvkulkarni" target="_blank">
-              <i class="fas fa-bookmark"></i>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="card-text text-center">Experience</h2>
-        <br><br>
-
-
-        <div class="row experience">
-
-          <div class="col-auto text-center flex-column d-none d-sm-flex">
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-            <div class="m-2">
-              <span class="badge badge-pill border exp-fill">&nbsp;</span>
-            </div>
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-          </div>
-
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title exp-title text-muted mt-0 mb-1">TECHNICAL DISCIPLINE LEAD</h4>
-                <h4 class="card-title exp-company text-muted my-0"><a href="https://www.arcadis.com" target="_blank"
-                    rel="noopener">ARCADIS CONSULTING</a></h4>
-                <div class="text-muted exp-meta">
-                  March 2019 – Present
-                  <span class="middot-divider"></span>
-                  <span>| Bengaluru, India</span>
-
-                </div>
-                <div class="card-text">I lead digital projects for Water Business Line and Business Advisory teams. I am
-                  leading a 20-member team which works on various projects ranging from Power BI / Tableau dashboards,
-                  web development, automation with UiPath, machine learning using R, Python and Azure. The role involves
-                  working with high performing teams and leading innovation in product development.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience 3 -->
-
-        <div class="row experience">
-
-          <div class="col-auto text-center flex-column d-none d-sm-flex">
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-            <div class="m-2">
-              <span class="badge badge-pill border exp-fill">&nbsp;</span>
-            </div>
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-          </div>
-
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title exp-title text-muted mt-0 mb-1">
-                  <main>SENIOR CONSULTANT – ANALYTICS </main>
-                </h4>
-                <h4 class="card-title exp-company text-muted my-0"><a href="https://www.mindtree.com" target="_blank"
-                    rel="noopener">Mindtree</a></h4>
-                <div class="text-muted exp-meta">
-                  April 2017 – March 2019
-                  <span class="middot-divider"></span>
-                  <span>| Bengaluru, India</span>
-
-                </div>
-                <div class="card-text">I was leading an 8-member team and was involved in designing and execution of
-                  pilot experiments & analysis, building predictive models, measure & report model performance for a
-                  major Retail CPG customer. I coordinated with the team of 3 data scientists working on 5 different
-                  projects. I lead the team which implemented analytics solution for ice cream market in Ecuador for the
-                  first time which helped sales growth of 5% QoQ.</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row experience">
-
-          <div class="col-auto text-center flex-column d-none d-sm-flex">
-            <div class="row h-50">
-              <div class="col ">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-            <div class="m-2">
-              <span class="badge badge-pill border ">&nbsp;</span>
-            </div>
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-          </div>
-          <!-- Experience 1 -->
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title exp-title text-muted mt-0 mb-1">SENIOR BUSINESS ANALYST</h4>
-                <h4 class="card-title exp-company text-muted my-0"><a href="https://www.cognizant.com/" target="_blank"
-                    rel="noopener">Cognizant Technology Solutions</a></h4>
-                <div class="text-muted exp-meta">
-                  March 2007 – April 2017
-                  <span class="middot-divider"></span>
-                  <span>| Bengaluru, India</span>
-                </div>
-                <div class="card-text">The role involved assisting all the business units of cognizant on adaptation of
-                  new technologies in collaboration with business unit heads, technology COE’s and marketing teams.
-                  Being part of CTO’s office, the role also involved communicating the strategies to be adopted across
-                  organization and publishing the vision of cognizant leadership through blogs, newsletters, tech talks,
-                  yammer and social media. Prior to this role, I worked as Associate where I was leading a 10 member COE
-                  team specialized on Adobe technologies and as Senior Associate, I worked on technology consulting and
-                  proposals for Insurance vertical.<a href="#" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="card-text text-center">Education</h2><br><br>
-        <div class="col py-2">
-
-        </div>
-
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Visvesvaraya Technological University</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">BE -
-                  Mechanical Engineering | Sep 2002 - Jul 2006</a></h4>
-
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Symbiosis University (SCDL)</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="https://www.arcadis.com" target="_blank"
-                  rel="noopener">PGDCRM | Apr 2012 - Feb 2014</a></h4>
-
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Microsoft Certified: Azure Fundamentals (AZ-900)
-              </h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">Microsoft |
-                  July 2023</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Google Cloud Introduction to Generative AI</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">Google | June
-                  2023</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Certified Data Science Practitioner (DSP-110)</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">Certnexus |
-                  May 2021</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Certified Task Manager</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">Arcadis
-                  Flagship Program | Nov 2020</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Scrum Certified Product Owner (CSPO)</h4>
-              <h4 class="card-title exp-company text-muted my-0"><a href="" target="_blank" rel="noopener">Scrum
-                  Alliance | Oct 2017</a></h4>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blogs">
-      <div class="w-100">
-        <h2 class="card-text text-center">Blogs</h2><br><br>
-        <div class="col py-2">
-
-        </div>
-      <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Generative AI Blogs</h4> -->
-              <h4 class="card-title exp-company text-muted my-0"><a
-                  href="https://amitvkulkarni.medium.com/list/generative-ai-2041dd023636" target="_blank" rel="noopener">
-                  Generative AI Blogs (39)</a></h4>
-
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Data Science Blogs</h4> -->
-              <h4 class="card-title exp-company text-muted my-0"><a
-                  href="https://amitvkulkarni.medium.com/list/data-science-e08675124f4a" target="_blank" rel="noopener">
-                  Data Science Blogs (47)</a></h4>
-
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Finance & investing Blogs
-              </h4> -->
-              <h4 class="card-title exp-company text-muted my-0"><a
-                  href="https://amitvkulkarni.medium.com/list/finance-with-python-8084dfa6ee2d" target="_blank"
-                  rel="noopener">
-                  Financial Analysis Using Python (19)</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Geospatial Blogs
-              </h4> -->
-              <h4 class="card-title exp-company text-muted my-0"><a
-                  href="https://amitvkulkarni.medium.com/list/finance-with-python-8084dfa6ee2d" target="_blank"
-                  rel="noopener">
-                  Geospatial Analysis Using Python (4)</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">App Development Using Python
-              </h4> -->
-              <h4 class="card-title exp-company text-muted my-0"><a
-                  href="https://amitvkulkarni.medium.com/list/app-development-using-python-eb539ef5eb21" target="_blank"
-                  rel="noopener">
-                  App Development Using Python (19)</a></h4>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ADDED COURSES -->
-    <hr class="m-0">
-
-
-
-    <!-- END OF COURSES -->
-
-    <!-- ADDED PRIBLICATIONS -->
-
-    <hr class="m-0">
-
-
-
-  </div>
-  </section>
-  <!-- END OF PUBLICATIONS -->
-
-  <hr class="m-0">
-
-  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-    <div class="w-100">
-      <h2 class="card-text text-center">Skills</h2><br>
-
-      <h4 class="card-text text-center">Programming Languages &amp; Tools</h4><br>
-      <!-- Project Section -->
-      <div class="container">
-        <!-- SKILLS Section Heading -->
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- SKILLS Grid Items -->
-        <div class="row ">
-
-          <!-- Skill 11 -->
-
-          <div class="col-md-12 col-lg-2 h-25 w-25" style="width:50px;height:50px;">
-            <div class="portfolio-item text-center " data-toggle="modal">
-              <img src="img/software/py.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0  " style="font-size:min(18px,2.5vw);text-align: center;"> Python </h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/R.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> R </h6>
-            </div>
-          </div>
-
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/git.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> GitHub </h6>
-            </div>
-          </div>
-
-
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/Docker.png" alt="" height="50" width="70">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> Docker </h6>
-            </div>
-          </div>
-          <br>
-
-          <!-- Skill 25 -->
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/azure.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> Azure ML Studio
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/DevOps.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> Azure DevOps</h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/powerBI.png" alt="" height="40" width="40">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> Power BI</h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/logo-plotly.png" alt="" height="40" width="80">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"> Plotly | Dash</h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/shiny.jpg" alt="" height="60" width="60">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"></h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/MLOps.png" alt="" height="70" width="130">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"></h6>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-2 h-25 w-25 " style="width:50px;height:50px;">
-            <div class="portfolio-item text-center" data-toggle="modal" style="margin-top: 20px">
-              <img src="img/software/DVC.svg" alt="" height="75" width="75">
-              <h6 class="text-secondary mb-0" style="font-size:min(17px,2.5vw);text-align: center;"></h6>
-            </div>
-          </div>
-
-
-        </div>
-        <br>
-
-
-      </div>
-  </section>
-  </section>
-
-  <hr class="m-0">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <!-- ADDED SECTION -->
-
-  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-    <div class="container">
-
-      <!-- Portfolio Section Heading -->
-      <h2 class="card-text text-center">Product Prototypes</h2>
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="200"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">R Shiny Project Management APP</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://histapp.shinyapps.io/Project_Management/" target="_blank" rel="noopener">Github | R</a>
-              </h7>
-              <div class="card-text">The app built using R shiny lets users track their projects, tasks, generate
-                visuals and Gantt charts instantly. The UI was built like MS Excel with frequently used operations
-                enabled on web such as pivot, auto fill etc.<a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Crash Analyser App</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Shiny%20App%20Los%20Angeles%20Crash%20Analysis"
-                  target="_blank" rel="noopener">Github | R</a></h7>
-              <div class="card-text">A crash analyser app built with R shiny lets user load the data, carry exploratory
-                data analysis and visualize the trends in an interactive mode. <a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="200"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Classification Model Simulator App</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Classification%20Model%20Simulator%20with%20Plotly-Dash"
-                  target="_blank" rel="noopener">Github | Python</a></h7>
-              <div class="card-text">A simulator build in python which lets user build model and view resulting metrics
-                in a interactive mode. It Lets user build & experiment multiple models and compare their performances.<a
-                  href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Product Price Optimizer App</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Price%20Optimization" target="_blank"
-                  rel="noopener">Github | Python</a></h7>
-              <div class="card-text">The Price optimization app built in python helps businesses strike the right
-                balance of efficient pricing, achieving profit objectives, and also serve their customers.<a href="#"
-                  target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="200"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Customer Loyalty Program App</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Customer%20Loyalty%20Program"
-                  target="_blank" rel="noopener">Github | Python</a></h7>
-              <div class="card-text">The app built using python-Dash helps business to segment their customers into
-                various categories to help businesses make data-driven decisions to improve customer loyalty..<a
-                  href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Customer Lifetime Value App</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Customer%20Lifetime%20Value"
-                  target="_blank" rel="noopener">Github | Python</a></h7>
-              <div class="card-text">The app built in python helps measure the Customer Lifetime Value which is the
-                profit that a business will make from a specific customer over the period of their association with the
-                business.<a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Scientific Article classification</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Janatahack-Independence-Day-2020-ML-Hackathon" target="_blank"
-                  rel="noopener">Github | Python</a></h7>
-              <div class="card-text">A multilabel text classification model built with fastai classifies the scientific
-                articles by giving token of identification to research articles which facilitates recommendation and
-                search process. <a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="200"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Auto ML in Power BI</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/PowerBI-and-AutoML" target="_blank" rel="noopener">Github |
-                  Python</a></h7>
-              <div class="card-text">Leveraging the power of auto ML and simplicity of Power BI to create a
-                user-friendly dashboard for data insights. Used PyCaret library for model building and designed a
-                dashboard where the model performance can be measured and visualized. <a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="200"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Trainee Performance Evaluation</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Trainee-Performance-Evaluation" target="_blank"
-                  rel="noopener">Github | R</a></h7>
-              <div class="card-text">A model to enabling client to strengthen its training program by figuring out of
-                the most important factors that lead to better engagement and performance of trainee.<a href="#"
-                  target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="50"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">R Shiny App for Interactive Model Building</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Interactive-Modelling-with-Shiny" target="_blank"
-                  rel="noopener">Github | R</a></h7>
-              <div class="card-text">R Shiny App for data exploration, interactive model building, identifying variable
-                importance and predicting on test data.<a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Predicting Hospitalization Duration</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Janatahack-Healthcare-Analytics-II" target="_blank"
-                  rel="noopener">Github | Python</a></h7>
-              <div class="card-text">The model can help hospitals to identify patients of high LOS risk at the time of
-                admission. Once identified, their treatment plan can be optimized to minimize LOS, lower the chance of
-                staff/visitor infection, better room and bed allocation planning.<a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col py-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="img-fluid" src="img/software/prototype-2.gif" alt="" width="150" height="150"></a>
-              <h4 class="card-title exp-title text-muted mt-0 mb-1">Simulation Modelling in Python</h4>
-              <h7 class="card-title exp-company text-muted my-0"><a
-                  href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Monte%20Carlo%20Simulation%20for%20Pipe%20Failure"
-                  target="_blank" rel="noopener">Github | Python</a></h7>
-              <div class="card-text">A python app for simulating the probability of pipe failure. The simulated results
-                would help businesses to decide on whether to continue with the current design or to review and redesign
-                the pipe.<a href="#" target="_blank"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-  </section>
-  <!-- END OF ADDED SECTION -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-  <hr class="m-0">
-
-  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-    <div class="w-100">
-      <h2 class="card-text text-center">Awards &amp; Recognitions</h2><br>
-      <ul class="fa-ul mb-0">
-        
-        <div class="row">
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/Annual.png" alt="" width="500" height="500"></a>
-                <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Won annual award for BEST EMERGING LEADER in 2022</h4> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://histapp.shinyapps.io/Project_Management/" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>Won annual award for BEST EMERGING LEADER in 2022 </b><a href="#"
-                    target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/HP.png" alt="" width="400" height="500"></a>
-                <!-- <h5 class="card-title exp-title text-muted mt-0 mb-1">I was Guest speaker to present latest trends in data science to the data science community of print analytics division of HP in September 2021</li></h5> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Shiny%20App%20Los%20Angeles%20Crash%20Analysis" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>I was Guest speaker to present latest trends in data science to the data
-                    science community of print analytics division of HP in September 2021</b> <a href="#"
-                    target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/Heartbeat-January2022.jpg" alt="" width="500" height="500"></a>
-                <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Won annual award for BEST EMERGING LEADER in 2022</h4> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://histapp.shinyapps.io/Project_Management/" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>My blog was published on January 2022 edition of Heartbeat edition</b><a
-                    href="#" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/Heartbeat-August2021.jpg" alt="" width="500" height="400"></a>
-                <!-- <h5 class="card-title exp-title text-muted mt-0 mb-1">I was Guest speaker to present latest trends in data science to the data science community of print analytics division of HP in September 2021</li></h5> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Shiny%20App%20Los%20Angeles%20Crash%20Analysis" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>My collection of blogs on MLOps was published on August 2021 edition of
-                    Heartbeat</b><a href="#" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/pinnacle.png" alt="" width="400" height="400"></a>
-                <!-- <h4 class="card-title exp-title text-muted mt-0 mb-1">Won annual award for BEST EMERGING LEADER in 2022</h4> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://histapp.shinyapps.io/Project_Management/" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>Won Pinnacle award for performing exceptionally in leading teams / projects –
-                    Q1 & Q2 2020</b><a href="#" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <img class="img-fluid" src="img/software/codeorange.jfif" alt="" width="500" height="500"></a>
-                <!-- <h5 class="card-title exp-title text-muted mt-0 mb-1">I was Guest speaker to present latest trends in data science to the data science community of print analytics division of HP in September 2021</li></h5> -->
-                <!-- <h7 class="card-title exp-company text-muted my-0"><a href="https://github.com/amitvkulkarni/Data-Apps/tree/main/Shiny%20App%20Los%20Angeles%20Crash%20Analysis" target="_blank" rel="noopener">Github | R</a></h7> -->
-                <div class="card-text"><b>Represented Arcadis in a Global Hackathon named “Code Orange” in Los Angeles,
-                    US in Oct’19</b><a href="#" target="_blank"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-      </ul>
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="md:hidden flex-col bg-white border-t border-slate-100 px-8 py-4 space-y-4">
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#expertise" onclick="closeMobileMenu()">Expertise</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#projects" onclick="closeMobileMenu()">Projects</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#experience" onclick="closeMobileMenu()">Experience</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#awards" onclick="closeMobileMenu()">Awards</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#credentials" onclick="closeMobileMenu()">Credentials</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#insights" onclick="closeMobileMenu()">Insights</a>
+      <a class="block text-sm font-semibold text-slate-600 hover:text-blue-600" href="#contact" onclick="closeMobileMenu()">Contact</a>
     </div>
-  </section>
+  </header>
 
-  <footer id="main-footer">
-    Copyright &copy; Amit Kulkarni 2022
+  <main class="pt-20">
+
+    <!-- ════════════════════════════════════
+         HERO SECTION
+    ════════════════════════════════════ -->
+    <section class="min-h-[819px] flex items-center px-8 bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto w-full asymmetric-grid items-center">
+
+        <!-- Left: Text -->
+        <div class="col-span-12 lg:col-span-7 space-y-stack-lg py-16 lg:py-0">
+          <span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed px-3 py-1 inline-block">
+            TECHNOLOGY ASSOCIATE DIRECTOR &nbsp;·&nbsp; 19+ YEARS
+          </span>
+          <h1 class="font-h1 text-h1 text-on-background">
+            Bridging Product Vision<br/>and AI Innovation with<br/>Executive Precision.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            An experienced leader with a strong technical foundation, specialising in AI-driven platforms, advanced analytics, and product leadership. Delivering measurable outcomes—from 60–90% GHG reductions to $1M+ cost savings—across global consulting engagements.
+          </p>
+          <div class="flex flex-wrap gap-stack-md pt-2">
+            <a href="#projects" class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-on-primary-container transition-colors">View My Work</a>
+            <a href="#contact" class="border border-outline text-on-surface px-8 py-4 font-label-caps text-label-caps hover:bg-surface-container transition-colors">Get in Touch</a>
+          </div>
+
+          <!-- Key metrics -->
+          <div class="flex flex-wrap gap-10 pt-4 border-t border-outline-variant mt-4">
+            <div>
+              <div class="font-h2 text-h2 text-on-background">19+</div>
+              <div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Years Experience</div>
+            </div>
+            <div>
+              <div class="font-h2 text-h2 text-on-background">175+</div>
+              <div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Published Articles</div>
+            </div>
+            <div>
+              <div class="font-h2 text-h2 text-on-background">$1M+</div>
+              <div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Cost Savings</div>
+            </div>
+            <div>
+              <div class="font-h2 text-h2 text-on-background">60–90%</div>
+              <div class="font-label-caps text-label-caps text-on-surface-variant mt-1">GHG Reduction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual card -->
+        <div class="col-span-12 lg:col-span-5 relative h-[500px] hidden lg:block">
+          <div class="absolute inset-0 bg-primary-container rounded-lg transform rotate-2"></div>
+          <div class="absolute inset-0 hero-visual rounded-lg shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
+            <div class="text-center px-8 relative z-10">
+              <div class="w-20 h-0.5 bg-on-tertiary-container mx-auto mb-8 opacity-60"></div>
+              <p class="font-label-caps text-label-caps text-on-primary-container tracking-widest mb-2">Technology Associate Director</p>
+              <p class="font-h3 text-2xl text-white font-bold mb-1">Arcadis Consulting</p>
+              <p class="font-body-md text-sm text-on-primary-container mb-8">Digital Intelligence &nbsp;·&nbsp; Bengaluru, India</p>
+              <div class="flex flex-col gap-3 items-center">
+                <span class="font-badge text-badge bg-white/10 text-white px-4 py-1.5 rounded-full text-xs border border-white/20">Generative AI &amp; LLMs</span>
+                <span class="font-badge text-badge bg-white/10 text-white px-4 py-1.5 rounded-full text-xs border border-white/20">Product Leadership</span>
+                <span class="font-badge text-badge bg-white/10 text-white px-4 py-1.5 rounded-full text-xs border border-white/20">Advanced Analytics</span>
+                <span class="font-badge text-badge bg-white/10 text-white px-4 py-1.5 rounded-full text-xs border border-white/20">Microsoft Azure</span>
+              </div>
+              <div class="w-20 h-0.5 bg-on-tertiary-container mx-auto mt-8 opacity-60"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CORE EXPERTISE & SKILLS
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface" id="expertise">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="mb-stack-lg">
+          <span class="font-label-caps text-label-caps text-on-tertiary-container">CAPABILITIES</span>
+          <h2 class="font-h2 text-h2 text-on-background mt-2">Core Expertise</h2>
+          <div class="h-1 w-20 bg-on-tertiary-container mt-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+
+          <div class="p-stack-lg border border-outline-variant bg-white hover:border-on-tertiary-container transition-colors group">
+            <span class="material-symbols-outlined text-on-tertiary-container text-4xl mb-4 block">psychology</span>
+            <h3 class="font-h3 text-h3 mb-2">AI &amp; Generative AI</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">LLMs, RAG Systems, NLP, and Computer Vision—building applied AI solutions that generate real business value across enterprise environments.</p>
+          </div>
+
+          <div class="p-stack-lg border border-outline-variant bg-white hover:border-on-tertiary-container transition-colors group">
+            <span class="material-symbols-outlined text-on-tertiary-container text-4xl mb-4 block">rocket_launch</span>
+            <h3 class="font-h3 text-h3 mb-2">Product Leadership</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">End-to-end product lifecycle management—from vision definition and backlog prioritisation to Agile/Scrum delivery and cross-functional team leadership.</p>
+          </div>
+
+          <div class="p-stack-lg border border-outline-variant bg-white hover:border-on-tertiary-container transition-colors group">
+            <span class="material-symbols-outlined text-on-tertiary-container text-4xl mb-4 block">analytics</span>
+            <h3 class="font-h3 text-h3 mb-2">Data Science &amp; Analytics</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Predictive analytics and ML pipelines using Python and Power BI—transforming raw data into actionable intelligence and measurable ROI.</p>
+          </div>
+
+          <div class="p-stack-lg border border-outline-variant bg-white hover:border-on-tertiary-container transition-colors group">
+            <span class="material-symbols-outlined text-on-tertiary-container text-4xl mb-4 block">cloud</span>
+            <h3 class="font-h3 text-h3 mb-2">Cloud &amp; Azure</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Microsoft Azure and Azure Foundry deployments—integrating cloud-native AI services and scalable infrastructure into enterprise platforms.</p>
+          </div>
+
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="mt-12">
+          <p class="font-label-caps text-label-caps text-on-surface-variant mb-4">TECHNICAL SKILLS</p>
+          <div class="flex flex-wrap gap-stack-sm">
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Python</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Microsoft Azure</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Azure Foundry</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Generative AI / LLMs</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">RAG Systems</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">NLP</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Computer Vision</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Power BI</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Pandas / NumPy</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Streamlit</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">Plotly Dash</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">NiceGUI</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">GitHub Copilot</span>
+            <span class="font-badge text-badge bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">GitHub</span>
+          </div>
+        </div>
+
+        <!-- Product Expertise -->
+        <div class="mt-8">
+          <p class="font-label-caps text-label-caps text-on-surface-variant mb-4">PRODUCT EXPERTISE</p>
+          <div class="flex flex-wrap gap-stack-sm">
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Product Vision &amp; Roadmap</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Backlog Prioritisation</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Go-to-Market Strategy</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Agile / Scrum</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Stakeholder Management</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Sprint Planning &amp; UAT</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Release Management</span>
+            <span class="font-badge text-badge bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">Market &amp; Competitive Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         FEATURED PROJECTS
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface-container-low" id="projects">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+          <div>
+            <span class="font-label-caps text-label-caps text-on-tertiary-container">IMPACT</span>
+            <h2 class="font-h2 text-h2 text-on-background mt-2">Strategic Engagements</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">Delivering measurable outcomes through AI innovation and product expertise.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+          <!-- Net Zero Catalyst -->
+          <div class="bg-white border border-outline-variant hover:border-on-tertiary-container hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 card-visual-1 card-visual-inner flex items-center justify-center">
+              <div class="text-center px-6 relative z-10">
+                <span class="material-symbols-outlined text-white text-5xl opacity-80">eco</span>
+                <p class="text-white/60 text-xs font-label-caps mt-2 tracking-widest">SUSTAINABILITY &amp; CLIMATE</p>
+              </div>
+            </div>
+            <div class="p-stack-lg space-y-stack-sm">
+              <span class="font-label-caps text-label-caps text-on-secondary-container">SUSTAINABILITY &amp; CLIMATE</span>
+              <h3 class="font-h3 text-h3">Net Zero Catalyst</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Conceptualised and launched a decarbonisation roadmap platform as Technical Discipline Lead—reducing greenhouse gas emissions by <strong>60–90%</strong> for a North American client, impacting climate targets between 2023–2026.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Python</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Azure</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Predictive Modelling</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Product Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Noise Forecast App -->
+          <div class="bg-white border border-outline-variant hover:border-on-tertiary-container hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 card-visual-2 card-visual-inner flex items-center justify-center">
+              <div class="text-center px-6 relative z-10">
+                <span class="material-symbols-outlined text-white text-5xl opacity-80">air</span>
+                <p class="text-white/60 text-xs font-label-caps mt-2 tracking-widest">SMART INFRASTRUCTURE</p>
+              </div>
+            </div>
+            <div class="p-stack-lg space-y-stack-sm">
+              <span class="font-label-caps text-label-caps text-on-secondary-container">SMART INFRASTRUCTURE</span>
+              <h3 class="font-h3 text-h3">Noise Forecast App</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Designed and led the AI Product strategy for predictive noise impact modelling deployed across <strong>116 wind turbines</strong>, <strong>6 wind farms</strong>, and <strong>19,000 homes</strong> in the Netherlands (2024–2025).
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">ML Modelling</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Streamlit</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Geospatial Analysis</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">AI Product Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FMCG Analytics -->
+          <div class="bg-white border border-outline-variant hover:border-on-tertiary-container hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 card-visual-3 card-visual-inner flex items-center justify-center">
+              <div class="text-center px-6 relative z-10">
+                <span class="material-symbols-outlined text-white text-5xl opacity-80">bar_chart</span>
+                <p class="text-white/60 text-xs font-label-caps mt-2 tracking-widest">ADVANCED ANALYTICS</p>
+              </div>
+            </div>
+            <div class="p-stack-lg space-y-stack-sm">
+              <span class="font-label-caps text-label-caps text-on-secondary-container">ADVANCED ANALYTICS</span>
+              <h3 class="font-h3 text-h3">FMCG Market Analytics</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                As Product Lead, spearheaded ML-driven analytics for a major FMCG client—driving <strong>5% QoQ sales growth</strong> in Ecuador's ice cream market and scaling the solution across <strong>15+ countries</strong>.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Machine Learning</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Python</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Power BI</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Predictive Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Automation Suite -->
+          <div class="bg-white border border-outline-variant hover:border-on-tertiary-container hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 card-visual-4 card-visual-inner flex items-center justify-center">
+              <div class="text-center px-6 relative z-10">
+                <span class="material-symbols-outlined text-white text-5xl opacity-80">code</span>
+                <p class="text-white/60 text-xs font-label-caps mt-2 tracking-widest">OPERATIONAL EFFICIENCY</p>
+              </div>
+            </div>
+            <div class="p-stack-lg space-y-stack-sm">
+              <span class="font-label-caps text-label-caps text-on-secondary-container">OPERATIONAL EFFICIENCY</span>
+              <h3 class="font-h3 text-h3">Python Automation Suite</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Engineered Python-based automation for invoicing, procurement, and reporting—achieving <strong>100% reduction</strong> in manual effort and over <strong>$1M in cost savings</strong> for a major North American Energy Company.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Python</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Process Automation</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Azure</span>
+                <span class="text-xs bg-surface-container text-on-surface-variant px-2 py-1">Workflow Optimisation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         PROFESSIONAL JOURNEY (TIMELINE)
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface-bright" id="experience">
+      <div class="max-w-7xl mx-auto">
+        <div class="asymmetric-grid">
+
+          <div class="col-span-12 lg:col-span-4">
+            <span class="font-label-caps text-label-caps text-on-tertiary-container">CAREER TIMELINE</span>
+            <h2 class="font-h2 text-h2 text-on-background mt-2">Professional Journey</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-stack-md pr-4">
+              A 19-year career spanning Cognizant, Mindtree, and Arcadis—driving digital transformation and AI innovation across global consulting engagements.
+            </p>
+          </div>
+
+          <div class="col-span-12 lg:col-span-8 space-y-10">
+
+            <!-- Role 1: Arcadis -->
+            <div class="relative pl-8 border-l-2 border-outline-variant group">
+              <div class="absolute -left-[9px] top-1 w-4 h-4 bg-primary rounded-full group-hover:scale-125 transition-transform"></div>
+
+              <!-- Header -->
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-1">
+                <h4 class="font-h3 text-h3 text-on-background">Technology Associate Director</h4>
+                <span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed px-2 py-0.5 mt-2 md:mt-0 self-start md:self-auto whitespace-nowrap">MAR 2019 — PRESENT</span>
+              </div>
+              <p class="font-badge text-badge text-secondary font-semibold uppercase tracking-widest mb-5">Arcadis Consulting &nbsp;·&nbsp; Digital Intelligence &nbsp;·&nbsp; Bengaluru</p>
+
+              <!-- Sub-role cards -->
+              <div class="space-y-3 mb-6">
+
+                <div class="bg-white border border-outline-variant p-4 rounded-sm">
+                  <p class="font-label-caps text-[10px] text-on-tertiary-container mb-1.5">ASSOCIATE DIRECTOR &nbsp;·&nbsp; AI ADOPTION</p>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Drive AI exploration across the organisation—facilitating discovery sessions, developing POCs, and engaging with clients to demonstrate the business value of AI solutions.</p>
+                </div>
+
+                <div class="bg-white border border-outline-variant p-4 rounded-sm">
+                  <p class="font-label-caps text-[10px] text-on-tertiary-container mb-1.5">TECHNICAL DISCIPLINE LEAD &nbsp;·&nbsp; NET ZERO CATALYST &nbsp;·&nbsp; 2023–2026</p>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Translated client sustainability requirements into a decarbonisation roadmap tool, impacting climate targets for a major North American client.</p>
+                </div>
+
+                <div class="bg-white border border-outline-variant p-4 rounded-sm">
+                  <p class="font-label-caps text-[10px] text-on-tertiary-container mb-1.5">AI PRODUCT MANAGER &nbsp;·&nbsp; NOISE FORECAST APP &nbsp;·&nbsp; 2024–2025</p>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Led product definition and design to enhance predictive modelling of wind turbine noise impacts for 116 turbines across 6 wind farms in the Netherlands.</p>
+                </div>
+
+              </div>
+
+              <!-- Metrics chips -->
+              <div class="flex flex-wrap gap-3">
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">schedule</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">1,000+ hours productivity gained</span>
+                </div>
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">savings</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">$1M+ cost savings</span>
+                </div>
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">eco</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">60–90% GHG reduction</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 2: Mindtree -->
+            <div class="relative pl-8 border-l-2 border-outline-variant group">
+              <div class="absolute -left-[9px] top-1 w-4 h-4 bg-outline-variant rounded-full group-hover:bg-primary transition-colors duration-200"></div>
+
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-1">
+                <h4 class="font-h3 text-h3 text-on-background">Senior Consultant – Advanced Analytics</h4>
+                <span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed px-2 py-0.5 mt-2 md:mt-0 self-start md:self-auto whitespace-nowrap">APR 2017 — MAR 2019</span>
+              </div>
+              <p class="font-badge text-badge text-secondary font-semibold uppercase tracking-widest mb-5">Mindtree</p>
+
+              <ul class="space-y-3 mb-6">
+                <li class="font-body-md text-body-md text-on-surface-variant flex gap-3">
+                  <span class="text-on-tertiary-container mt-1 flex-shrink-0 text-sm">▸</span>
+                  Led an 8-member data science team as Product Lead for a major FMCG client, managing the full lifecycle from solution definition through to post-go-live analysis.
+                </li>
+                <li class="font-body-md text-body-md text-on-surface-variant flex gap-3">
+                  <span class="text-on-tertiary-container mt-1 flex-shrink-0 text-sm">▸</span>
+                  Identified high-value market opportunities in Ecuador's ice cream segment, launching pilot analytics solutions that delivered measurable commercial results.
+                </li>
+                <li class="font-body-md text-body-md text-on-surface-variant flex gap-3">
+                  <span class="text-on-tertiary-container mt-1 flex-shrink-0 text-sm">▸</span>
+                  Scaled the successful pilot into a product expansion strategy, adapting solutions for 15+ country markets based on client feedback and proven value.
+                </li>
+              </ul>
+
+              <!-- Metrics chips -->
+              <div class="flex flex-wrap gap-3">
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">trending_up</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">5% QoQ sales growth</span>
+                </div>
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">language</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">15+ country expansion</span>
+                </div>
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">group</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">8-member team led</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 3: Cognizant -->
+            <div class="relative pl-8 border-l-2 border-outline-variant group">
+              <div class="absolute -left-[9px] top-1 w-4 h-4 bg-outline-variant rounded-full group-hover:bg-primary transition-colors duration-200"></div>
+
+              <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-1">
+                <h4 class="font-h3 text-h3 text-on-background">Senior Business Analyst</h4>
+                <span class="font-label-caps text-label-caps text-on-tertiary-container bg-tertiary-fixed px-2 py-0.5 mt-2 md:mt-0 self-start md:self-auto whitespace-nowrap">MAR 2007 — APR 2017</span>
+              </div>
+              <p class="font-badge text-badge text-secondary font-semibold uppercase tracking-widest mb-5">Cognizant Technology Solutions</p>
+
+              <!-- Progressive sub-roles as a simple table -->
+              <div class="space-y-2 mb-5">
+                <div class="grid grid-cols-[130px_1fr] gap-4 py-3 border-b border-outline-variant last:border-0">
+                  <span class="font-label-caps text-[10px] text-on-tertiary-container self-start pt-0.5">2015 – 2017</span>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Worked within the CTO's office to identify and evaluate emerging technologies, defining their potential as new product offerings for the business.</p>
+                </div>
+                <div class="grid grid-cols-[130px_1fr] gap-4 py-3 border-b border-outline-variant">
+                  <span class="font-label-caps text-[10px] text-on-tertiary-container self-start pt-0.5">2013 – 2015</span>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Orchestrated technology proposals and consulting solutions for the Insurance vertical, translating complex business requirements into actionable recommendations.</p>
+                </div>
+                <div class="grid grid-cols-[130px_1fr] gap-4 py-3">
+                  <span class="font-label-caps text-[10px] text-on-tertiary-container self-start pt-0.5">2009 – 2013</span>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Led a 10-member Centre of Excellence (CoE) team as the internal product expert on Adobe technologies, supporting critical client delivery projects.</p>
+                </div>
+              </div>
+
+              <!-- Metrics chips -->
+              <div class="flex flex-wrap gap-3">
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">group</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">10-member CoE led</span>
+                </div>
+                <div class="flex items-center gap-2 bg-surface-container border border-outline-variant px-4 py-2 rounded-sm">
+                  <span class="material-symbols-outlined text-on-tertiary-container text-base">business_center</span>
+                  <span class="font-label-caps text-[11px] text-on-surface-variant">10 years · multi-vertical</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         AWARDS & RECOGNITION
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface-container-low border-t border-outline-variant" id="awards">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="mb-stack-lg">
+          <span class="font-label-caps text-label-caps text-on-tertiary-container">HONOURS</span>
+          <h2 class="font-h2 text-h2 text-on-background mt-2">Awards &amp; Recognition</h2>
+          <div class="h-1 w-20 bg-on-tertiary-container mt-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">emoji_events</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">AI INNOVATION</div>
+              <h4 class="font-h3 text-lg text-on-background">First Runner Up – AI Innovation Hackathon</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Arcadis Internal Competition</span>
+                <span class="font-label-caps text-xs">NOV 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">workspace_premium</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">BUSINESS EXCELLENCE</div>
+              <h4 class="font-h3 text-lg text-on-background">Technical Champion Award</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Arcadis Consulting</span>
+                <span class="font-label-caps text-xs">2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">stars</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">LEADERSHIP</div>
+              <h4 class="font-h3 text-lg text-on-background">Best Emerging Leader Award</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Arcadis Consulting</span>
+                <span class="font-label-caps text-xs">2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">edit_note</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">THOUGHT LEADERSHIP</div>
+              <h4 class="font-h3 text-lg text-on-background">MLOps Articles Featured in Heartbeat</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Heartbeat by Fritz AI (Aug 2021 &amp; Jan 2022)</span>
+                <span class="font-label-caps text-xs">2021–2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">mic</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">PUBLIC SPEAKING</div>
+              <h4 class="font-h3 text-lg text-on-background">Guest Speaker – Latest Trends in Data Science</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>HP Print Analytics Division</span>
+                <span class="font-label-caps text-xs">SEP 2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">military_tech</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">PERFORMANCE EXCELLENCE</div>
+              <h4 class="font-h3 text-lg text-on-background">Pinnacle Award – Team &amp; Project Excellence</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Arcadis Consulting &nbsp;·&nbsp; Q1 &amp; Q2</span>
+                <span class="font-label-caps text-xs">2020</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-6 bg-white border border-outline-variant hover:border-on-tertiary-container transition-all md:col-span-2 lg:col-span-1">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl flex-shrink-0">public</span>
+            <div class="space-y-1">
+              <div class="font-label-caps text-[10px] text-on-tertiary-container">GLOBAL REPRESENTATION</div>
+              <h4 class="font-h3 text-lg text-on-background">Code Orange Global Hackathon</h4>
+              <div class="flex justify-between items-center text-on-surface-variant text-sm font-body-md">
+                <span>Represented Arcadis &nbsp;·&nbsp; Los Angeles, USA</span>
+                <span class="font-label-caps text-xs">OCT 2019</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CERTIFICATIONS & EDUCATION
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface-container-lowest border-t border-outline-variant" id="credentials">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+
+          <!-- Certifications -->
+          <div class="space-y-stack-lg">
+            <div>
+              <span class="font-label-caps text-label-caps text-on-tertiary-container">MICROSOFT AZURE</span>
+              <h2 class="font-h2 text-h2 text-on-background mt-2">Certifications</h2>
+              <div class="h-1 w-20 bg-on-tertiary-container mt-2"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">verified</span>
+                <div>
+                  <div class="font-semibold text-on-background">AI-900</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">Azure AI Fundamentals</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">verified</span>
+                <div>
+                  <div class="font-semibold text-on-background">AZ-900</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">Azure Fundamentals</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">workspace_premium</span>
+                <div>
+                  <div class="font-semibold text-on-background">AB-731</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">AI Transformation Leader</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">workspace_premium</span>
+                <div>
+                  <div class="font-semibold text-on-background">AB-730</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">AI Business Professional</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">database</span>
+                <div>
+                  <div class="font-semibold text-on-background">DP-900</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">Azure Data Fundamentals</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-outline-variant rounded-sm hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined text-on-tertiary-container flex-shrink-0">security</span>
+                <div>
+                  <div class="font-semibold text-on-background">SC-900</div>
+                  <div class="text-xs text-on-surface-variant font-label-caps">Security, Compliance &amp; Identity</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="space-y-stack-lg">
+            <div>
+              <span class="font-label-caps text-label-caps text-on-tertiary-container">ACADEMIC</span>
+              <h2 class="font-h2 text-h2 text-on-background mt-2">Education</h2>
+              <div class="h-1 w-20 bg-on-tertiary-container mt-2"></div>
+            </div>
+            <div class="space-y-10">
+
+              <div class="group relative pl-6 border-l-2 border-outline-variant hover:border-on-tertiary-container transition-colors">
+                <h4 class="font-h3 text-xl text-on-background">B.E. in Mechanical Engineering</h4>
+                <div class="flex justify-between items-center text-on-surface-variant mt-2">
+                  <span class="font-body-md">Visvesvaraya Technological University (VTU)</span>
+                  <span class="font-label-caps text-xs">2002 — 2006</span>
+                </div>
+              </div>
+
+              <div class="group relative pl-6 border-l-2 border-outline-variant hover:border-on-tertiary-container transition-colors">
+                <h4 class="font-h3 text-xl text-on-background">PGDM in Customer Relationship Management</h4>
+                <div class="flex justify-between items-center text-on-surface-variant mt-2">
+                  <span class="font-body-md">Symbiosis Centre for Distance Learning (SCDL)</span>
+                  <span class="font-label-caps text-xs">2012 — 2014</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         PUBLISHED WORK
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface" id="published">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+          <div>
+            <span class="font-label-caps text-label-caps text-on-tertiary-container">THOUGHT LEADERSHIP</span>
+            <h2 class="font-h2 text-h2 text-on-background mt-2">Published Work</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">175+ articles on data science, AI, geospatial analysis, and app development.</p>
+          </div>
+          <div class="flex items-center gap-6 mt-4 md:mt-0">
+            <a href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-on-tertiary-container font-label-caps text-label-caps hover:text-primary transition-colors">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+              Medium
+            </a>
+            <a href="https://github.com/amitvkulkarni" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-on-tertiary-container font-label-caps text-label-caps hover:text-primary transition-colors">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats banner -->
+        <div class="grid grid-cols-2 md:grid-cols-4 bg-primary-container p-8 mb-12">
+          <div class="text-center py-4">
+            <div class="font-h2 text-h2 text-on-primary">175+</div>
+            <div class="font-label-caps text-label-caps text-on-primary-container mt-1">Articles Published</div>
+          </div>
+          <div class="text-center py-4">
+            <div class="font-h2 text-h2 text-on-primary">2+</div>
+            <div class="font-label-caps text-label-caps text-on-primary-container mt-1">Platforms</div>
+          </div>
+          <div class="text-center py-4">
+            <div class="font-h2 text-h2 text-on-primary">4+</div>
+            <div class="font-label-caps text-label-caps text-on-primary-container mt-1">Topic Domains</div>
+          </div>
+          <div class="text-center py-4">
+            <div class="font-h2 text-h2 text-on-primary">5+</div>
+            <div class="font-label-caps text-label-caps text-on-primary-container mt-1">Years Writing</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+          <div class="p-8 bg-white border border-outline-variant hover:border-primary transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="material-symbols-outlined text-on-tertiary-container">auto_stories</span>
+                <span class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-wider">Data Science &amp; MLOps</span>
+              </div>
+              <h3 class="font-h3 text-xl mb-3">Data Science &amp; MLOps</h3>
+              <p class="font-body-md text-on-surface-variant text-sm">In-depth tutorials and guides on building production-grade ML pipelines, experiment tracking, model deployment, and operationalising AI at scale.</p>
+            </div>
+            <a class="inline-flex items-center text-xs font-label-caps text-on-tertiary-container hover:text-primary transition-colors group mt-6" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">
+              Read on Medium <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-base">open_in_new</span>
+            </a>
+          </div>
+
+          <div class="p-8 bg-white border border-outline-variant hover:border-primary transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="material-symbols-outlined text-on-tertiary-container">hub</span>
+                <span class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-wider">Generative AI</span>
+              </div>
+              <h3 class="font-h3 text-xl mb-3">Generative AI &amp; LLMs</h3>
+              <p class="font-body-md text-on-surface-variant text-sm">Practical explorations of large language models, RAG architectures, prompt engineering, and enterprise AI application development using Azure and Python.</p>
+            </div>
+            <a class="inline-flex items-center text-xs font-label-caps text-on-tertiary-container hover:text-primary transition-colors group mt-6" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">
+              Read on Medium <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-base">open_in_new</span>
+            </a>
+          </div>
+
+          <div class="p-8 bg-white border border-outline-variant hover:border-primary transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="material-symbols-outlined text-on-tertiary-container">map</span>
+                <span class="font-label-caps text-[10px] text-on-secondary-container uppercase tracking-wider">Geospatial &amp; App Dev</span>
+              </div>
+              <h3 class="font-h3 text-xl mb-3">Geospatial &amp; App Development</h3>
+              <p class="font-body-md text-on-surface-variant text-sm">Articles on geospatial data analysis with Python and building interactive data applications using Streamlit, Plotly Dash, and NiceGUI.</p>
+            </div>
+            <a class="inline-flex items-center text-xs font-label-caps text-on-tertiary-container hover:text-primary transition-colors group mt-6" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">
+              Read on Medium <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-base">open_in_new</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         TECH BLOG / INSIGHTS
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8 bg-surface-container-low" id="insights">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="mb-stack-lg flex flex-col md:flex-row justify-between items-end">
+          <div>
+            <span class="font-label-caps text-label-caps text-on-tertiary-container">BLOG</span>
+            <h2 class="font-h2 text-h2 text-on-background mt-2">Latest Insights</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">Technical deep-dives from the frontlines of AI and analytics.</p>
+          </div>
+          <a href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer" class="font-label-caps text-xs text-on-tertiary-container border-b border-on-tertiary-container hover:text-primary transition-colors mt-4 md:mt-0">View All on Medium →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+          <article class="bg-white border border-outline-variant hover:shadow-lg transition-all flex flex-col h-full">
+            <div class="p-8 space-y-4 flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-tertiary-fixed text-[10px] font-bold text-on-tertiary-fixed uppercase tracking-wider">MLOps</span>
+                <span class="text-[11px] text-on-surface-variant font-medium">Aug 2021</span>
+              </div>
+              <h4 class="font-h3 text-xl leading-tight hover:text-on-tertiary-container cursor-pointer transition-colors">Why MLOps is the Backbone of Production-Grade AI</h4>
+              <p class="text-sm text-on-surface-variant line-clamp-3">Practical strategies for operationalising machine learning models at enterprise scale—covering CI/CD for ML, model monitoring, and governance best practices. Featured in Heartbeat.</p>
+            </div>
+            <div class="px-8 pb-8 flex items-center justify-between border-t border-slate-100 pt-4">
+              <span class="text-xs text-slate-400">Featured in Heartbeat</span>
+              <a class="text-xs font-label-caps text-on-tertiary-container font-bold hover:underline" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">Read Post</a>
+            </div>
+          </article>
+
+          <article class="bg-white border border-outline-variant hover:shadow-lg transition-all flex flex-col h-full">
+            <div class="p-8 space-y-4 flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-tertiary-fixed text-[10px] font-bold text-on-tertiary-fixed uppercase tracking-wider">Generative AI</span>
+                <span class="text-[11px] text-on-surface-variant font-medium">Jan 2022</span>
+              </div>
+              <h4 class="font-h3 text-xl leading-tight hover:text-on-tertiary-container cursor-pointer transition-colors">Building Enterprise RAG Systems with Azure and Python</h4>
+              <p class="text-sm text-on-surface-variant line-clamp-3">A framework for building retrieval-augmented generation pipelines that deliver accurate, grounded responses for enterprise knowledge management—reducing hallucinations at scale. Featured in Heartbeat.</p>
+            </div>
+            <div class="px-8 pb-8 flex items-center justify-between border-t border-slate-100 pt-4">
+              <span class="text-xs text-slate-400">Featured in Heartbeat</span>
+              <a class="text-xs font-label-caps text-on-tertiary-container font-bold hover:underline" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">Read Post</a>
+            </div>
+          </article>
+
+          <article class="bg-white border border-outline-variant hover:shadow-lg transition-all flex flex-col h-full">
+            <div class="p-8 space-y-4 flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-tertiary-fixed text-[10px] font-bold text-on-tertiary-fixed uppercase tracking-wider">App Development</span>
+                <span class="text-[11px] text-on-surface-variant font-medium">2023</span>
+              </div>
+              <h4 class="font-h3 text-xl leading-tight hover:text-on-tertiary-container cursor-pointer transition-colors">From Data to Dashboard: Building Production Apps with Streamlit</h4>
+              <p class="text-sm text-on-surface-variant line-clamp-3">A hands-on guide to transforming Python data science projects into polished, interactive web applications using Streamlit and Plotly Dash—from prototype to production.</p>
+            </div>
+            <div class="px-8 pb-8 flex items-center justify-between border-t border-slate-100 pt-4">
+              <span class="text-xs text-slate-400">Analytics Vidhya</span>
+              <a class="text-xs font-label-caps text-on-tertiary-container font-bold hover:underline" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">Read Post</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CALL TO ACTION / CONTACT
+    ════════════════════════════════════ -->
+    <section class="py-section-gap px-8" id="contact">
+      <div class="max-w-5xl mx-auto bg-primary-container p-12 lg:p-24 text-center space-y-stack-lg">
+        <h2 class="font-h1 text-h1 text-on-primary">Ready to collaborate on your next AI initiative?</h2>
+        <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
+          Open to consulting engagements, advisory roles, and collaborative projects in AI product development, data science, and digital transformation. Let's build something impactful together.
+        </p>
+        <div class="flex flex-wrap justify-center gap-stack-md pt-4">
+          <a href="mailto:amitvkulkarni2@gmail.com" class="bg-on-primary text-primary px-10 py-5 font-label-caps text-label-caps hover:bg-surface-container transition-colors">
+            amitvkulkarni2@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/amitvkulkarni" target="_blank" rel="noopener noreferrer" class="border border-on-primary-container text-on-primary px-10 py-5 font-label-caps text-label-caps hover:bg-white/10 transition-colors">
+            Connect on LinkedIn
+          </a>
+        </div>
+        <!-- <p class="font-label-caps text-label-caps text-on-primary-container pt-2">+91&nbsp;96111&nbsp;02202 &nbsp;·&nbsp; Bengaluru, India</p> -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="w-full py-12 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8">
+      <p class="font-sans text-xs uppercase tracking-widest text-slate-400">© 2026 Amit Kulkarni. All rights reserved.</p>
+      <div class="flex space-x-8 mt-6 md:mt-0">
+        <a class="font-sans text-xs uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors" href="https://www.linkedin.com/in/amitvkulkarni" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="font-sans text-xs uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors" href="https://medium.com/@amitvkulkarni" target="_blank" rel="noopener noreferrer">Medium</a>
+        <a class="font-sans text-xs uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors" href="https://github.com/amitvkulkarni" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
   </footer>
 
-
-  </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+    }
+  </script>
 
 </body>
-
 </html>
